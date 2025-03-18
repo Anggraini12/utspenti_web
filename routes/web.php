@@ -34,3 +34,11 @@ Route::get('/login', function () {
     return view('beranda.login');
 });
 
+Route::get('/app', function () {
+    return view('layouts.app');
+});
+
+
+use App\Http\Controllers\DashboardController;
+
+Route::get('/index', [DashboardController::class, 'index'])->name('home');
