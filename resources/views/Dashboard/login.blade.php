@@ -15,7 +15,7 @@
             <div class="col-8 m-auto">
                 <div class="card">
                 <div class="card-header">
-                    <h3 class="float-start">Form Data Masyarakat</h3>
+                    <h3 class="float-start">Wellcome Too My App</h3>
                 </div>
     <form>
         <div class="mb-3">

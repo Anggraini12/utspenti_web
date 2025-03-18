@@ -8,6 +8,32 @@
     <title>Document</title>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ route('home') }}">Beranda Kantor Keuchik</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/warga">Data Warga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Surat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Status</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        @yield('content')
+    </div>
+
+    <footer class="fixed-bottom bg-dark text-white py-2 mt-4 text-center">
+        Copyright &copy; Penti Anggraini - 2025
+    </footer>
+
+
 <div class="container mt-4">
     <div class="row">
         <!-- Statistik -->
@@ -33,7 +59,7 @@
     </div>
 
     <!-- Pengumuman -->
-    <div class="row mt-4">
+    <div class="row mt-2">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header bg-primary text-white">
@@ -54,7 +80,7 @@
         </div>
     </div>
 
-    <!-- Tombol Aksi -->
+    {{-- <!-- Tombol Aksi -->
     <div class="row mt-4">
         <div class="col-md-6">
             <a href="#" class="btn btn-primary btn-lg w-100">Kelola Data Warga</a>
@@ -63,7 +89,7 @@
             <a href="#" class="btn btn-warning btn-lg w-100">Manajemen Surat</a>
         </div>
     </div>
-</div>
+</div> --}}
 
 
         <script src="{{asset('js/bootstrap.min.js')}}"></script>

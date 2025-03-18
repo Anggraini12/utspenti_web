@@ -9,7 +9,7 @@ class DashboardController extends Controller
     public function index()
     {
         $data = [
-            'jumlah_warga' => 520,  
+            'jumlah_warga' => 563,  
             'jumlah_surat' => 120,  
             'pengumuman' => [
                 ['judul' => 'Rapat Bulanan Keuchik', 'tanggal' => '20 Maret 2025', 'isi' => 'Rapat akan diadakan di balai desa pada pukul 10.00 WIB.'],
